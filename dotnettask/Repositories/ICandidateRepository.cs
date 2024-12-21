@@ -1,4 +1,5 @@
 using CandidateHubAPI.Models;
+
 namespace CandidateHubAPI.Repositories
 {
     public interface ICandidateRepository
