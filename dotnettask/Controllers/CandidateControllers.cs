@@ -1,3 +1,4 @@
+using CandidateHubAPI.Models;
 using CandidateHubAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,13 @@ namespace CandidateHubAPI.Controllers
             _repository = repository;
         }
 
-        
+        [HttpPost]
+        public async Task<IActionResult> AddOrUpdateCandidate([FromBody] Candidate candidate)
+        {
+            if (string.IsNullOrEmpty(candidate.Email))
+                return BadRequest("Email is required.");
+
+            return Ok("Candidate information added/updated successfully.");
+        }
     }
 }
