@@ -1,6 +1,0 @@
-@dotnettask_HostAddress = http://localhost:5120
-
-GET {{dotnettask_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
