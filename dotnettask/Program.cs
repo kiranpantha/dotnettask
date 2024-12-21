@@ -15,7 +15,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/candidate", () =>
+app.MapPost("/candidate", () =>
 {
     
 })
