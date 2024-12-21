@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnettask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd51183dc7be7fe73d2697ceac4d786c884319eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8e2d103c6ba906479648da98bf6c547df51e8b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnettask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnettask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
