@@ -4,7 +4,7 @@ using Microsoft.Data.Sqlite;
 
 namespace CandidateHubAPI.Repositories
 {
-    public class CandidateRepository : ICandidateRepository
+    public class CandidateRepository:ICandidateRepository
     {
         private readonly string _connectionString;
 
@@ -79,11 +79,6 @@ namespace CandidateHubAPI.Repositories
             AddParameter(command, "@LinkedInURL", System.Data.DbType.String, candidate.LinkedInURL!);
             AddParameter(command, "@GitHubURL", System.Data.DbType.String, candidate.GitHubURL!);
             AddParameter(command, "@Comment", System.Data.DbType.String, candidate.Comment);
-        }
-
-        Task<Candidate> ICandidateRepository.AddOrUpdateCandidateAsync(Candidate candidate)
-        {
-            throw new NotImplementedException();
         }
     }
 }

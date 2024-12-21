@@ -20,7 +20,7 @@ namespace CandidateHubAPI.Controllers
         {
             if (string.IsNullOrEmpty(candidate.Email))
                 return BadRequest("Email is required.");
-
+            await _repository.AddOrUpdateCandidateAsync(candidate);
             return Ok("Candidate information added/updated successfully.");
         }
     }

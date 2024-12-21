@@ -4,6 +4,6 @@ namespace CandidateHubAPI.Repositories
 {
     public interface ICandidateRepository
     {
-        Task<Candidate> AddOrUpdateCandidateAsync(Candidate candidate);
+        Task<string> AddOrUpdateCandidateAsync(Candidate candidate);
     }
 }
